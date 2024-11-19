@@ -1,0 +1,256 @@
+body {
+  font-size: 24px;
+  line-height: 1.5;
+  background-color: #fafafa;
+}
+
+nav {
+  display: flex;
+  width: 50%;
+  justify-content: end;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+select,
+textarea,
+input,
+button {
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+
+/* FORM */
+.form {
+  border: 2px solid grey;
+  border-radius: 10px;
+  background-color: rgb(235, 235, 235);
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+
+.form h2 {
+  text-align: center;
+  font-style: italic;
+}
+
+.form label {
+  font-style: italic;
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+.form-field {
+  margin-bottom: 20px;
+}
+
+.field-error {
+  color: rebeccapurple;
+  font-size: 18px;
+  max-width: 350px;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+/* MENU */
+#menu {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  font-weight: bold;
+  border-bottom: 2px solid rgb(211, 211, 211);
+  padding: 5px 20px;
+}
+
+.menu-text {
+  font-style: italic;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.menu-text:hover {
+  text-decoration: underline;
+}
+
+#main-page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.index-page h3,
+h4 {
+  text-align: center;
+}
+
+/* PRODUCT LIST */
+.product-excerpt {
+  display: flex;
+  position: relative;
+  margin-bottom: 30px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  width: 650px;
+  background-color: white;
+  /* height: 250px; */
+}
+
+.product-link {
+  display: block;
+  color: black;
+  height: 100%;
+  width: 100%;
+}
+
+.product-card {
+  display: flex;
+  padding: 10px;
+}
+
+.product-img {
+  display: block;
+}
+
+.product-card .product-img {
+  width: 200px;
+}
+
+.product-page .product-img {
+  width: 300px;
+}
+
+.text-sep {
+  border: none;
+  color: rgb(165, 70, 70);
+  background-color: rgb(70, 50, 160);
+  height: 2px;
+}
+
+.product-text {
+  width: 350px;
+  margin-left: 20px;
+  border-left: 1px solid gray;
+  padding: 20px;
+  padding-top: 10px;
+}
+
+.product-feat {
+  font-style: italic;
+}
+
+.del-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 20px;
+  padding: 2px;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.link-btn {
+  border: 1.5px solid gray;
+  border-radius: 10px;
+  background-color: coral;
+  color: black;
+  padding: 1px 12px 1px 12px;
+}
+
+.reaction-button {
+  font-size: 25px;
+  color: transparent;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  text-shadow: 0 0 1px whitesmoke, 0 0 2px black;
+  border: none;
+}
+
+.reaction-button.active {
+  text-shadow: 0 0 0 rgb(219, 31, 31);
+}
+
+.product-excerpt .reaction-button {
+  position: absolute;
+  bottom: 6px;
+  right: 5px;
+}
+
+.product-page .reaction-button {
+  position: static;
+}
+
+/* PRODUCT PAGE */
+.product-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid rgb(189, 189, 189);
+  border-radius: 10px;
+  margin-top: 10px;
+  width: 700px;
+}
+
+.product-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.product-inst {
+  position: absolute;
+  right: -80px;
+}
+
+.product-desc {
+  margin-top: 20px;
+  width: 90%;
+  text-align: justify;
+}
+
+.link-edit {
+  margin-left: 5px;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.product-footer {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  padding-right: 10px;
+}
+
+.product-footer .menu-text {
+  font-size: 20px;
+}
