@@ -78,7 +78,7 @@ export const fetchProducts = createAppAsyncThunk(
     throw new Error(response.statusText);
   },
   {
-    condition(arg, thunkApi) {
+    condition(_arg, thunkApi) {
       const productsStatus = selectProductsStatus(thunkApi.getState());
       if (productsStatus !== "idle") {
         return false;
